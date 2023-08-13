@@ -44,7 +44,7 @@ else {
     alert("No ingreso una opcion correctamente");
 }
 
-let opcion = prompt("Escriba la operacion que desea: sumar, restar, dividir, multiplicar, para salir escriba ESC");
+opcion = prompt("Escriba la operacion que desea: sumar, restar, dividir, multiplicar, para salir escriba ESC");
 
 }
 
