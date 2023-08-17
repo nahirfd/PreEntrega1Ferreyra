@@ -1,52 +1,37 @@
-alert("Bienvenido a la calculadora online!");
+alert("Bienvenido al carrito de compras de Florentina")
 
-let opcion = prompt("Escriba la operacion que desea: sumar, restar, dividir, multiplicar, para salir escriba ESC");
+const yerba1 = 1500;
+const yerba2 = 1500;
+const yerba3 = 1500;
+const yerba4 = 1500;
 
-while (opcion != "ESC") {
+let compra = prompt("Ingrese el producto que desea comprar *yerba1: Yerba manzanilla *yerba2: Yerba citrus *yerba3: Yerba chocolate *yerba4: Yerba menta. Si no desea comprar responda Salir");
 
-if (opcion == "sumar") {
-    // Pedir dos números enteros por teclado
-    let num1 = parseInt(prompt("Introduce el primer número entero"));
-    let num2 = parseInt(prompt("Introduce el segundo número entero"));
-    // Calcular la suma de los dos números
-    let suma = num1 + num2;
-    // Mostrar el resultado de la suma
-    alert("La suma de los dos números es " + suma);
+let totalcompra = 0
+while (compra != "Salir") {
+
+    if (compra == "yerba1") {
+        totalcompra = totalcompra + yerba1
+        console.log("El carrito sumo:" + totalcompra)
+    }
+    if (compra == "yerba2") {
+        totalcompra = totalcompra + yerba2
+        console.log("El carrito sumo:" + totalcompra)
+    }
+    if (compra == "yerba3") {
+        totalcompra = totalcompra + yerba3
+        console.log("El carrito sumo:" + totalcompra)
+    }
+    if (compra == "yerba4") {
+        totalcompra = totalcompra + yerba4
+        console.log("El carrito sumo:" + totalcompra)
+    }
+
+    let respuesta = prompt("El carrito tiene un total de= $" + totalcompra + ". Desea seguir comprando? Si - No")
+
+    if (respuesta == "Si") {
+        compra = prompt("Ingrese el producto que desea comprar *yerba1: Yerba manzanilla *yerba2: Yerba citrus *yerba3: Yerba chocolate *yerba4: Yerba menta");
+    } else if (respuesta == "No") {
+        alert("Pagar= " + totalcompra)
+    }
 }
-else if (opcion == "restar") {
-    // Pedir dos números enteros por teclado
-    let num1 = parseInt(prompt("Introduce el primer número entero"));
-    let num2 = parseInt(prompt("Introduce el segundo número entero"));
-    // Calcular la resta de los dos números
-    let resta = num1 - num2;
-    // Mostrar el resultado de la resta
-    alert("La resta de los dos números es " + resta);
-}
-else if (opcion == "dividir") {
-    // Pedir dos números enteros por teclado
-    let num1 = parseInt(prompt("Introduce el primer número entero"));
-    let num2 = parseInt(prompt("Introduce el segundo número entero"));
-    // Calcular la resta de los dos números
-    let division = num1 / num2;
-    // Mostrar el resultado de la resta
-    alert("La division de los dos números es " + division);
-}
-else if (opcion == "multiplicar") {
-    // Pedir dos números enteros por teclado
-    let num1 = parseInt(prompt("Introduce el primer número entero"));
-    let num2 = parseInt(prompt("Introduce el segundo número entero"));
-    // Calcular la resta de los dos números
-    let multiplicacion = num1 * num2;
-    // Mostrar el resultado de la resta
-    alert("La multiplicacion de los dos números es " + multiplicacion);
-}
-else {
-    alert("No ingreso una opcion correctamente");
-}
-
-opcion = prompt("Escriba la operacion que desea: sumar, restar, dividir, multiplicar, para salir escriba ESC");
-
-}
-
-alert("Vuelva pronto!");
-
